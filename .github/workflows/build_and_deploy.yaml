@@ -3,7 +3,13 @@ name: Deploy to VPS
 on:
   push:
     branches: [main]
-  workflow_dispatch:
+
+env:
+  REMOTE_HOST: ${{ secrets.VPS_HOST }}
+  REMOTE_USER: ${{ secrets.VPS_USERNAME }}
+  SSH_PRIVATE_KEY: ${{ secrets.VPS_KEY }}
+  SOURCE: dist/
+  TARGET: /var/www/html/
 
 jobs:
   deploy:
@@ -19,11 +25,5 @@ jobs:
       - name: Build project
         run: yarn build
 
-      - name: Copy output files to VPS
-        uses: appleboy/ssh-action@v0.1.8
-        with:
-          host: ${{ secrets.VPS_HOST }}
-          username: ${{ secrets.VPS_USERNAME }}
-          key: ${{ secrets.VPS_KEY }}
-          source: "dist/*"
-          target: "/var/www/html/"
+      - name: ssh deploy
+        uses: easingthemes/ssh-deploy@v4.1.8
