@@ -1,4 +1,4 @@
 ---
-title: 'Erste Mannschaft'
-coach: 'Marco Gülta'
+title: "Erste Mannschaft"
+coach: "Marco Gülta"
 ---

@@ -5,14 +5,14 @@ const teams = await getCollection("teams");
 ---
 
 <nav>
-	<a href="/">Home</a>
-	<ul class="nested">
-		<span>Mannschaften</span>{
-			teams.map((team) => (
-				<li>
-					<a href={`/mannschaften/${team.slug}`}>{team.data.title}</a>
-				</li>
-			))
-		}
-	</ul>
+  <a href="/">Home</a>
+  <ul class="nested">
+    <span>Mannschaften</span>{
+      teams.map((team) => (
+        <li>
+          <a href={`/mannschaften/${team.slug}`}>{team.data.title}</a>
+        </li>
+      ))
+    }
+  </ul>
 </nav>

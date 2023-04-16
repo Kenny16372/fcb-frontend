@@ -1,4 +1,4 @@
 ---
-title: 'Zweite Mannschaft'
-coach: 'Markus Schülein'
+title: "Zweite Mannschaft"
+coach: "Markus Schülein"
 ---
