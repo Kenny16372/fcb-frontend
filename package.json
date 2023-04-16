@@ -1,7 +1,7 @@
 {
   "name": "fcbischberg_homepage",
   "type": "module",
-  "license": "CC-BY-3.0-DE",
+  "license": "CC-BY-3.0",
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
@@ -14,7 +14,7 @@
     "astro": "^2.1.8"
   },
   "devDependencies": {
-    "eslint": "^7.38.0",
+    "eslint": "^8.38.0",
     "prettier": "^1.8.7"
   }
 }
