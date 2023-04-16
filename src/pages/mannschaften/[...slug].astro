@@ -1,0 +1,22 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+
+export async function getStaticPaths() {
+	const teams = await getCollection("teams");
+	return teams.map((entry) => ({
+		params: { slug: entry.slug },
+		props: { entry },
+	}));
+}
+
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+---
+
+<Layout title={entry.data.title}>
+	<label for="coach">Trainer:&nbsp;</label><span id="coach"
+		>{entry.data.coach}</span
+	>
+	<Content />
+</Layout>
