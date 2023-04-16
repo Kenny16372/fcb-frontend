@@ -1,6 +1,10 @@
 {
   "extends": "astro/tsconfigs/strictest",
   "compilerOptions": {
-    "esModuleInterop": true
+    "baseUrl": ".",
+    "esModuleInterop": true,
+    "paths": {
+      "@layouts/*": ["src/layouts/*"]
+    }
   }
 }
