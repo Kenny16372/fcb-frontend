@@ -1,17 +1,14 @@
 ---
+layout: "@layouts/Layout.astro"
 title: 'Kinderturnen'
 ---
-import Layout from '@layouts/Layout.astro'
-
-<Layout title={frontmatter.title}>
-
 
 Mädchen und Jungen im Alter von 5-8 Jahren treffen sich jeweils:
 
 Donnerstag in der Hauptschulturnhalle in Bischberg
 von 17.00 – 18.00 Uhr
 
-Gemeinsam, oder auch nach Alter getrennt, haben alle Spaß beim “KiTu”!
+Gemeinsam, oder auch nach Alter getrennt, haben alle Spaß beim "KiTu"!
 
 Wir betreiben kein Leistungsturnen! Die Kinder sollen mit Spaß und Freude an
 der Bewegung soziale Erfahrungen sammeln. Nach den Grundsätzen der
@@ -28,5 +25,3 @@ Ansprechpartnerin:
 Katrin Weiß
 
 E-Mail: [Katrin.weiss80@web.de](mailto://Katrin.weiss80@web.de)
-
-</Layout>

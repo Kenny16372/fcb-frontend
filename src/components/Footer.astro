@@ -1,4 +1,10 @@
-<footer>
+---
+export type Props = {
+    class: string;
+}
+const props = Astro.props
+---
+<footer class={props.class}>
   <a href="/kontakt">Kontakt</a>
   <a href="/datenschutz">Datenschutz</a>
 </footer>
