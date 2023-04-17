@@ -1,9 +1,8 @@
 ---
 title: 'Handball'
+layout: "@layouts/Layout.astro"
 ---
-import Layout from '@layouts/Layout.astro'
 
-<Layout title={frontmatter.title}>
 [hc03 Bamberg](https://www.hc03-bamberg.de/)
 
 Abteilungsleiter:
@@ -13,4 +12,3 @@ Stefan Kröner<br />
 Schulstr. 49<br />
 96120 Bischberg
 </address>
-</Layout>

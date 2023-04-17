@@ -1,9 +1,8 @@
 ---
+layout: "@layouts/Layout.astro"
 title: 'Frauen Fitness'
 ---
-import Layout from '@layouts/Layout.astro'
 
-<Layout title={frontmatter.title}>
 Die Gruppe besteht derzeit aus 15 – 20 Damen.
 Im Winterhalbjahr treffen wir uns einmal wöchentlich
 
@@ -22,4 +21,3 @@ Neulinge sind jederzeit herzlich willkommen.
 Ansprechpartnerin: Carola Gerhardt; Tel.: [0951-7002465](tel://09517002465)
 
 Übungsleiterin: Michaela Schlauch
-</Layout>
