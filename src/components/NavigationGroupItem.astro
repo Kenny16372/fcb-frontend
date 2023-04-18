@@ -1,0 +1,73 @@
+---
+import { isRenderTemplateResult } from "astro/dist/runtime/server/render/astro";
+import type { Props as NavigationItemProps } from "./NavigationItem.astro";
+import NavigationItem from "./NavigationItem.astro";
+
+export type Props = {
+  prefix: string;
+  title: string;
+  items: NavigationItemProps[];
+};
+const { prefix, title, items } = Astro.props as Props;
+---
+
+<li class="navigation-item">
+  <a href={prefix} class="navigation-link">{title}</a>
+  <div class="group-wrapper">
+    <ul class="navigation-group">
+      {
+        items.map((item) => (
+          <div class="navigation-group-item">
+            <NavigationItem {...item} path={`${prefix}/${item.path}`} />
+          </div>
+        ))
+      }
+    </ul>
+  </div>
+</li>
+
+<style>
+  .navigation-item {
+    padding: 0.5rem 1rem;
+    list-style: none;
+  }
+
+  .navigation-link {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  @media screen and (width > 48rem) {
+    .navigation-item {
+      height: var(--navigation-item-height);
+      line-height: var(--navigation-item-height);
+      position: relative;
+      display: inline-block;
+    }
+
+    .group-wrapper {
+      background: #fff;
+      position: absolute;
+      display: none;
+      top: calc(var(--navigation-item-height) + var(--font-size));
+      right: 0;
+    }
+
+    .navigation-group {
+      padding-inline-start: 0;
+      width: fit-content;
+    }
+
+    .navigation-group-item:hover {
+      background: #f0f0f0;
+    }
+
+    .navigation-item:hover {
+      background: #f0f0f0;
+    }
+
+    .navigation-item:hover .group-wrapper {
+      display: block;
+    }
+  }
+</style>

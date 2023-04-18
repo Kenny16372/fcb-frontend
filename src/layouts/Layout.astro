@@ -3,10 +3,12 @@ import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 
 export interface Props {
-  frontmatter: {title: string};
+  frontmatter: { title: string };
 }
 
-const { frontmatter: {title} } = Astro.props;
+const {
+  frontmatter: { title },
+} = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -29,6 +31,7 @@ const { frontmatter: {title} } = Astro.props;
 </html>
 <style is:global>
   :root {
+    font-size: 1rem;
     --accent: 124, 58, 237;
     --accent-gradient: linear-gradient(
       45deg,
@@ -41,7 +44,8 @@ const { frontmatter: {title} } = Astro.props;
     font-family: system-ui, sans-serif;
     background-color: #f6f6f6;
   }
-  html, body {
+  html,
+  body {
     margin: 0;
     padding: 0;
   }
