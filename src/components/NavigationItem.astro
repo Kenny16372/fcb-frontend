@@ -1,0 +1,38 @@
+---
+export type Props = {
+  path: string;
+  title: string;
+};
+const { path, title } = Astro.props as Props;
+---
+
+<li class="navigation-item">
+  <a href={path} class="navigation-link">{title}</a>
+</li>
+
+<style>
+  .navigation-item {
+    height: var(--navigation-item-height);
+    line-height: var(--navigation-item-height);
+    padding: 0.5rem 1rem;
+    display: block;
+    white-space: nowrap;
+    list-style: none;
+    background: #fff;
+  }
+
+  .navigation-item:hover {
+    background: #f0f0f0;
+  }
+
+  .navigation-link {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  @media screen and (width > 48rem) {
+    .navigation-item {
+      display: inline-block;
+    }
+  }
+</style>
