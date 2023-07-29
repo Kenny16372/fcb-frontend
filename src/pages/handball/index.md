@@ -1,9 +1,9 @@
 ---
-title: 'Handball'
 layout: "@layouts/Layout.astro"
+title: "Handball"
 ---
 
-[hc03 Bamberg](https://www.hc03-bamberg.de/)
+[![Logo hc03 Bamberg](/HC-logo1.jpg)](https://www.hc03-bamberg.de/)
 
 Abteilungsleiter:
 

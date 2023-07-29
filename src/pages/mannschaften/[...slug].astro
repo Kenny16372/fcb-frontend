@@ -1,7 +1,12 @@
 ---
 import { getCollection, type CollectionEntry } from "astro:content";
+import { Image } from "astro:assets";
 import Layout from "../../layouts/Layout.astro";
-import type { InferGetStaticParamsType, InferGetStaticPropsType, GetStaticPaths } from "astro";
+import type {
+  InferGetStaticParamsType,
+  InferGetStaticPropsType,
+  GetStaticPaths,
+} from "astro";
 
 export async function getStaticPaths() {
   const teams = await getCollection("teams");
@@ -12,15 +17,16 @@ export async function getStaticPaths() {
 }
 
 interface Props {
-  entry: CollectionEntry<'teams'>
+  entry: CollectionEntry<"teams">;
 }
-    
+
 const { entry } = Astro.props;
 const { Content } = await entry.render();
 ---
 
-<Layout frontmatter={{title: entry.data.title}}>
-  <label for="coach">Trainer:&nbsp;</label>
-  <span id="coach">{entry.data.coach}</span>
+<Layout frontmatter={{ title: entry.data.title, widget: entry.data.widget }}>
+  {entry.data.photo && <Image src={entry.data.photo} alt={entry.data.title} />}
+  <label>Trainer:&nbsp;</label>
+  <span>{entry.data.coach}</span>
   <Content />
 </Layout>

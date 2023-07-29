@@ -1,0 +1,34 @@
+---
+export enum WidgetType {
+  Games = "games",
+  TableFirst = "tableFirst",
+  TableSecond = "tableSecond"
+}
+
+export type Props = {
+  widget: WidgetType;
+};
+
+const { widget } = Astro.props as Props;
+---
+<div class="mb-16">
+{
+  widget === WidgetType.Games && (
+    <div class="h-[80vh]">
+      <div id="bfv1690660243450" class="contents">Laden...</div>
+      <script type="text/javascript">
+        const options = { height: "100%", width: "100%", selectedTab: BFVWidget.HTML5.vereinTabs.spiele, colorResults: "rgb(29, 35, 42)" , colorNav: "undefined", colorClubName: "rgb(46, 48, 133)", backgroundNav: "rgb(46, 48, 133)"}
+        BFVWidget.HTML5.zeigeVereinSpiele("00ES8GNJVO00000VVV0AG08LVUPGND5I", "bfv1690660243450", options)
+      </script>
+    </div>
+  )
+}
+{widget === WidgetType.TableFirst && <div><div id="bfv1690662384753" class="contents">Laden...</div>
+<script>
+BFVWidget.HTML5.zeigeWettbewerbsTabelle("02M4RLIV2C000006VS5489B4VUAB0UC4-G", "bfv1690662384753", { height: "593px",  width: "100%" , colorResults: "undefined" , colorNav: "" , colorClubName : "rgb(46, 48, 133)" , backgroundNav: "rgb(46, 48, 133)"});
+</script></div>}
+{widget === WidgetType.TableSecond && <div id="bfv1690663381301">Laden...</div>
+<script>
+BFVWidget.HTML5.zeigeWettbewerbsTabelle("02M4RMR83C000007VS5489B4VUAB0UC4-G", "bfv1690663381301", { height: "534px",  width: "100%" , colorResults: "undefined" , colorNav: "undefined" , colorClubName : "rgb(46, 48, 133)" , backgroundNav: "rgb(46, 48, 133)"});
+</script>}
+</div>

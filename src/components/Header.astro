@@ -1,29 +1,32 @@
 ---
-import { getCollection } from "astro:content";
-import NavigationItem from "./NavigationItem.astro";
-import NavigationGroupItem from "./NavigationGroupItem.astro";
 import Logo from "./Logo.astro";
-
-const teams = await getCollection("teams");
+import Navigation from "./Navigation.astro";
 ---
 
 <header>
   <nav class="navbar">
     <div class="flex-1"><Logo /></div>
     <div class="flex-none">
-      <ul class="menu menu-horizontal px-1">
-        <NavigationGroupItem
-          prefix="/mannschaften"
-          title="Mannschaften"
-          items={teams.map((team) => ({
-            path: team.slug,
-            title: team.data.title,
-          }))}
-        />
-        <NavigationItem path="/handball" title="Handball" />
-        <NavigationItem path="/kinderturnen" title="Kinderturnen" />
-        <NavigationItem path="/frauen-fitness" title="Frauen Fitness" />
-      </ul>
+      <div class="hidden lg:block">
+        <ul class="menu menu-horizontal px-1">
+          <Navigation />
+        </ul>
+      </div>
+      <div class="flex-none lg:hidden">
+        <label for="drawer" class="btn btn-square btn-ghost">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            class="inline-block h-6 w-6 stroke-current"
+            ><path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"></path></svg
+          >
+        </label>
+      </div>
     </div>
   </nav>
 </header>
