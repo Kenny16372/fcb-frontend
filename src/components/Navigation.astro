@@ -1,0 +1,18 @@
+---
+import { getCollection } from "astro:content";
+import NavigationItem from "./NavigationItem.astro";
+import NavigationGroupItem from "./NavigationGroupItem.astro";
+const teams = await getCollection("teams");
+---
+
+<NavigationGroupItem
+  prefix="/mannschaften"
+  title="Mannschaften"
+  items={teams.map((team) => ({
+    path: team.slug,
+    title: team.data.title,
+  }))}
+/>
+<NavigationItem path="/handball" title="Handball" />
+<NavigationItem path="/kinderturnen" title="Kinderturnen" />
+<NavigationItem path="/frauen-fitness" title="Frauen Fitness" />

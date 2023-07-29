@@ -2,31 +2,45 @@
 import "../global.css";
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
+import Drawer from "../components/Drawer.astro";
+import type { WidgetType } from "src/components/Widget.astro";
+import Widget from "src/components/Widget.astro";
 
 export interface Props {
-  frontmatter: { title: string };
+  frontmatter: { title: string; widget: WidgetType };
 }
 
 const {
-  frontmatter: { title },
+  frontmatter: { title, widget },
 } = Astro.props;
 ---
 
 <!DOCTYPE html>
-<html lang="de" class="h-full">
+<html lang="de" class="drawer h-screen">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/logo128x128.png" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+    <script
+      type="text/javascript"
+      src="https://widget-prod.bfv.de/widget/widgetresource/widgetjs"
+    ></script>
   </head>
-  <body class="flex h-full flex-col">
+  <body class="drawer-content flex h-screen flex-col">
+    <input id="drawer" type="checkbox" class="drawer-toggle" />
     <Header />
-    <main class="p-sm flex-1">
-      <h1 class="text-center text-6xl">{title}</h1>
-      <slot />
+    <main class="flex-1 p-2">
+      <div
+        class="prose mx-auto dark:prose-invert sm:prose-sm lg:prose-xl prose-headings:text-center prose-img:m-auto prose-img:rounded-2xl"
+      >
+        <h1>{title}</h1>
+        {widget && <Widget {widget} />}
+        <slot />
+      </div>
     </main>
     <Footer />
+    <Drawer />
   </body>
 </html>

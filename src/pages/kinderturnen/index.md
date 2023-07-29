@@ -1,6 +1,6 @@
 ---
 layout: "@layouts/Layout.astro"
-title: 'Kinderturnen'
+title: "Kinderturnen"
 ---
 
 Mädchen und Jungen im Alter von 5-8 Jahren treffen sich jeweils:

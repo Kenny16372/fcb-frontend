@@ -1,6 +1,6 @@
 ---
 layout: "@layouts/Layout.astro"
-title: 'Frauen Fitness'
+title: "Frauen Fitness"
 ---
 
 Die Gruppe besteht derzeit aus 15 – 20 Damen.
