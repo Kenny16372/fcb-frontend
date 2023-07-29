@@ -1,3 +1,5 @@
 {
-  "astroAllowShorthand": false
+  "plugins": ["prettier-plugin-astro", "prettier-plugin-tailwindcss"],
+  "astroAllowShorthand": true,
+  "pluginSearchDirs": false
 }
