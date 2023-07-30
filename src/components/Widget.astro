@@ -1,8 +1,8 @@
 ---
 export enum WidgetType {
   Games = "games",
-  TableFirst = "tableFirst",
-  TableSecond = "tableSecond"
+  First = "first",
+  Second = "second"
 }
 
 export type Props = {
@@ -23,12 +23,12 @@ const { widget } = Astro.props as Props;
     </div>
   )
 }
-{widget === WidgetType.TableFirst && <div><div id="bfv1690662384753" class="contents">Laden...</div>
+{widget === WidgetType.First && <div class="h-[80vh]"><div id="bfv1690699416105" class="contents">Laden...</div>
 <script>
-BFVWidget.HTML5.zeigeWettbewerbsTabelle("02M4RLIV2C000006VS5489B4VUAB0UC4-G", "bfv1690662384753", { height: "593px",  width: "100%" , colorResults: "undefined" , colorNav: "" , colorClubName : "rgb(46, 48, 133)" , backgroundNav: "rgb(46, 48, 133)"});
+BFVWidget.HTML5.zeigeMannschaftKomplett("016PLNQ0AO000000VV0AG811VUDIC8D7", "bfv1690699416105", { height: "100%", width: "100%", selectedTab:BFVWidget.HTML5.mannschaftTabs.spiele, colorResults: "rgb(46, 48, 133)" , colorNav: "" , colorClubName : "rgb(46, 48, 133)" , backgroundNav: "rgb(46, 48, 133)"});
 </script></div>}
-{widget === WidgetType.TableSecond && <div id="bfv1690663381301">Laden...</div>
+{widget === WidgetType.Second && <div class="h-[80vh]"><div id="bfv1690699940535" class="contents">Laden...</div>
 <script>
-BFVWidget.HTML5.zeigeWettbewerbsTabelle("02M4RMR83C000007VS5489B4VUAB0UC4-G", "bfv1690663381301", { height: "534px",  width: "100%" , colorResults: "undefined" , colorNav: "undefined" , colorClubName : "rgb(46, 48, 133)" , backgroundNav: "rgb(46, 48, 133)"});
-</script>}
+BFVWidget.HTML5.zeigeMannschaftKomplett("02M9PS66LK000000VS5489B1VV4JLPLE", "bfv1690699940535", { height: "100%", width: "100%", selectedTab:BFVWidget.HTML5.mannschaftTabs.spiele, colorResults: "rgb(46, 48, 133)" , colorNav: "undefined" , colorClubName : "rgb(46, 48, 133)" , backgroundNav: "rgb(46, 48, 133)"});
+</script></div>}
 </div>

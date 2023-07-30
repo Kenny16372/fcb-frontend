@@ -1,5 +1,13 @@
+---
+import { Image } from "astro:assets";
+import logo from "~/assets/logo128x128.png";
+---
+
 <a href="/" class="flex items-center gap-4"
-  ><img class="h-12" src="/logo128x128.png" /><span class="text-4xl"
-    >1. FC Bischberg</span
-  ></a
+  ><Image
+    class="h-12 w-auto"
+    src={logo}
+    alt="Logo FC Bischberg"
+    loading={"eager"}
+  /><span class="text-4xl">1. FC Bischberg</span></a
 >
