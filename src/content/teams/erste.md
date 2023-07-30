@@ -1,6 +1,6 @@
 ---
 title: "Erste Mannschaft"
 coach: "Daniel Ankenbrand"
-photo: "./1_2_Mannschaft.jpg"
-widget: "tableFirst"
+photo: "../../assets/1_2_Mannschaft.jpg"
+widget: "first"
 ---

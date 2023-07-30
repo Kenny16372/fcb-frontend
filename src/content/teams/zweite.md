@@ -1,6 +1,6 @@
 ---
 title: "Zweite Mannschaft"
 coach: "Markus Schülein"
-photo: "./2_Mannschaft.jpg"
-widget: "tableSecond"
+photo: "../../assets/2_Mannschaft.jpg"
+widget: "second"
 ---
