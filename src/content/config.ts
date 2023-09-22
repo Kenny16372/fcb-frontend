@@ -1,4 +1,5 @@
 import { z, defineCollection } from "astro:content";
+import { WidgetType } from "src/components/Widget.astro";
 
 const teamCollection = defineCollection({
   schema: ({ image }) =>
@@ -6,7 +7,7 @@ const teamCollection = defineCollection({
       title: z.string(),
       coach: z.string(),
       photo: image().optional(),
-      widget: z.string().optional(),
+      widget: z.nativeEnum(WidgetType).optional(),
     }),
 });
 
