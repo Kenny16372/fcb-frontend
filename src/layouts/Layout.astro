@@ -28,14 +28,14 @@ const {
       src="https://widget-prod.bfv.de/widget/widgetresource/widgetjs"
     ></script>
   </head>
-  <body class="drawer-content flex h-screen flex-col">
+  <body class="funino drawer-content flex flex-col">
     <input id="drawer" type="checkbox" class="drawer-toggle" />
     <Header />
     <main class="flex-1 p-2">
       <div
         class="prose mx-auto dark:prose-invert sm:prose-sm lg:prose-xl prose-headings:text-center prose-img:m-auto prose-img:rounded-2xl"
       >
-        <h1>{title}</h1>
+        <h1 class="text-black dark:text-black">{title}</h1>
         {widget && <Widget {widget} />}
         <slot />
       </div>
@@ -43,4 +43,11 @@ const {
     <Footer />
     <Drawer />
   </body>
+  <style>
+    .funino {
+      background-image: url(/funino.jpg);
+      background-size: cover;
+      background-attachment: fixed;
+    }
+  </style>
 </html>

@@ -1,6 +1,6 @@
 ---
 title: "C2 Jugend 2010"
-coach: "Markus Schülein"
-photo: "../../assets/2_Mannschaft.jpg"
-widget: "second"
+coach: ""
+times: "Mo und Do 17:00 - 18:30"
+place: "Mo Wacker Bamberg, Do Sportplatz Weipeldorfer Straße"
 ---

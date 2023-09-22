@@ -8,6 +8,8 @@ const teamCollection = defineCollection({
       photo: image().optional(),
       widget: z.string().optional(),
       order: z.number().optional(),
+      times: z.string().optional(),
+      place: z.string().optional(),
     }),
 });
 

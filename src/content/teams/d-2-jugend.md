@@ -1,6 +1,6 @@
 ---
 title: "D2 Jugend 2012"
-coach: "Markus Schülein"
-photo: "../../assets/2_Mannschaft.jpg"
-widget: "second"
+coach: "Jens Ehrhardt, Zoran Maksic"
+times: "Di 17:30 - 19:00 Uhr"
+place: "Sportplatz Weipeldorfer Straße"
 ---

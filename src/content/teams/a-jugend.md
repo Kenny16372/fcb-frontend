@@ -1,6 +1,6 @@
 ---
 title: "A Jugend 2005/06"
-coach: "Markus Schülein"
-photo: "../../assets/2_Mannschaft.jpg"
-widget: "second"
+coach: "Claus Göller, Alexander Rüth"
+times: "Mo und Mi 18:00 - 19:30 Uhr"
+place: "Mo Kunstrasen Gaustadt, Mi Sportplatz Weipelsdorfer Straße"
 ---

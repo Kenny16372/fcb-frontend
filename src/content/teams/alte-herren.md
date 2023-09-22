@@ -1,7 +1,6 @@
 ---
 title: "Alte Herren"
-coach: "Markus Schülein"
-photo: "../../assets/2_Mannschaft.jpg"
-widget: "second"
-order: 1
+coach: "Thomas Scholz"
+times: "Di 18:30 - 20:00 Uhr"
+place: "Sportplatz Weipelsdorfer Straße"
 ---

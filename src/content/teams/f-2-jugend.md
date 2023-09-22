@@ -1,6 +1,6 @@
 ---
 title: "F2 Jugend 2016"
-coach: "Markus Schülein"
-photo: "../../assets/2_Mannschaft.jpg"
-widget: "second"
+coach: "Matthias Trempa, Martin Rahmer, Przemyslaw Nida"
+times: "Do 17:00 - 18:15 Uhr"
+place: "Sportplatz am Leinritt"
 ---
