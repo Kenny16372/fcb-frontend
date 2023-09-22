@@ -5,14 +5,20 @@ import NavigationGroupItem from "./NavigationGroupItem.astro";
 const teams = await getCollection("teams");
 ---
 
+<a href="/Eintrittserklärung.pdf" target="_blank">Mitglied werden</a>
+<NavigationItem path="/gremium" title="Gremium" />
 <NavigationGroupItem
-  prefix="/mannschaften"
-  title="Mannschaften"
-  items={teams.map((team) => ({
-    path: team.slug,
-    title: team.data.title,
-  }))}
+  prefix="/fussball"
+  title="Fußball"
+  items={[
+    ...teams.map((team) => ({
+      path: team.slug,
+      title: team.data.title,
+      order: team.data.order,
+    })),
+  ].sort(({ order }) => order ?? Infinity)}
 />
 <NavigationItem path="/handball" title="Handball" />
+<NavigationItem path="/volleyball" title="Volleyball" />
 <NavigationItem path="/kinderturnen" title="Kinderturnen" />
 <NavigationItem path="/frauen-fitness" title="Frauen Fitness" />

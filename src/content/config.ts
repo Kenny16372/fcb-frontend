@@ -7,6 +7,7 @@ const teamCollection = defineCollection({
       coach: z.string(),
       photo: image().optional(),
       widget: z.string().optional(),
+      order: z.number().optional(),
     }),
 });
 

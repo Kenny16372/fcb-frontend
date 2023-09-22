@@ -8,7 +8,7 @@ title: "Handball"
 Abteilungsleiter:
 
 <address>
-Stefan Kröner<br />
+<a href="mailto:stefan.kroener@fcbischberg.de">Stefan Kröner</a><br />
 Schulstr. 49<br />
 96120 Bischberg
 </address>

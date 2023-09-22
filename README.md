@@ -7,4 +7,5 @@
 
 ## TODO
 
-- https://www.bfv.de/allgemein/datenschutzrichtlinien für die Widgets
+- sortierung mannschaftern
+- sponsoren (logos von Jann, design, links)
