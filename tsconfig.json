@@ -1,11 +1,12 @@
 {
-  "extends": "astro/tsconfigs/strictest",
+  "extends": "astro/tsconfigs/strictest", 
   "compilerOptions": {
     "baseUrl": ".",
     "esModuleInterop": true,
     "paths": {
       "@layouts/*": ["src/layouts/*"]
     },
+    "jsx": "preserve",
     "verbatimModuleSyntax": true
   }
 }
