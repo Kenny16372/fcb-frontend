@@ -3,21 +3,25 @@ layout: "@layouts/Layout.astro"
 title: "Frauen Fitness"
 ---
 
-Die Gruppe besteht derzeit aus 15 – 20 Damen.
-Im Winterhalbjahr treffen wir uns einmal wöchentlich
+**Die Gruppe besteht aus derzeit 10-15 Frauen.**
+**Wir trainieren jeden Mittwoch 19 Uhr in der Grundschulturnhalle**
 
-Mittwochs zwischen 19:00 Uhr und 20.00 Uhr
+> Bleib fit, mach mit!
 
-in der Grundschulturnhalle in Bischberg.
+Lust auf:
 
-Es wird Fitness- und Problemzonengymnastik mit Musik angeboten.
+Fitness- und Problemzonengymnastik mit guter Musik, gute Laune, Spaß und a weng
+Muskelkater?
 
-Ab ca. Ende Mai wird der Treff außerhalb der Turnhalle verlegt und wir veranstalten Fahrradtouren, besuchen den Trimm-Dich-Pfad, gehen Powerwalken oder machen sonstige Sachen, die Spaß machen.
+Dann schau vorbei!
 
-Zusätzlich findet an jedem letzten Mittwoch im Monat ein geselliges Beisammensein statt.
+In den Sommermonaten, wenn die Halle zu heiß wird, gehen wir walken oder fahren Rad.
 
-Neulinge sind jederzeit herzlich willkommen.
+Am letzten Mittwoch im Monat klingen wir nach dem Sport zusammen den Abend aus.
 
-Ansprechpartnerin: Carola Gerhardt; Tel.: [0951-7002465](tel://09517002465)
+Probier es aus! Wir freuen uns auf dich!
 
-Übungsleiterin: Michaela Schlauch
+Ansprechpartnerinnen:
+
+- Michaela Schlauch (Trainerin) Tel. [016091136986](tel:016091136986)
+- Carola Gerhardt (Abteilungsleiterin) Tel. [0951 7002465](tel:09517002465)

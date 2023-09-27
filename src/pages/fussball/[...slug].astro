@@ -19,13 +19,41 @@ const { entry } = Astro.props;
 const { Content } = await entry.render();
 ---
 
-<Layout frontmatter={{ title: entry.data.title, widget: entry.data.widget }}>
+<Layout
+  frontmatter={{
+    title: entry.data.title,
+    widget: entry.data.widget,
+    bgImage: "/funino.jpg",
+  }}
+>
+  {
+    entry.data.coach && (
+      <div>
+        <label>Trainer:&nbsp;</label>
+        <span>{entry.data.coach}</span>
+      </div>
+    )
+  }
+  {
+    entry.data.times && (
+      <div>
+        <label>Trainingszeiten:&nbsp;</label>
+        <span>{entry.data.times}</span>
+      </div>
+    )
+  }
+  {
+    entry.data.place && (
+      <div>
+        <label>Trainingsort:&nbsp;</label>
+        <span>{entry.data.place}</span>
+      </div>
+    )
+  }
   {
     entry.data.photo && (
       <Image src={entry.data.photo} alt={entry.data.title} quality="high" />
     )
   }
-  <label>Trainer:&nbsp;</label>
-  <span>{entry.data.coach}</span>
   <Content />
 </Layout>

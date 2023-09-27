@@ -7,11 +7,15 @@ import type { WidgetType } from "src/components/Widget.astro";
 import Widget from "src/components/Widget.astro";
 
 export interface Props {
-  frontmatter: { title: string; widget: WidgetType | undefined };
+  frontmatter: {
+    title: string;
+    widget: WidgetType | undefined;
+    bgImage?: string | undefined;
+  };
 }
 
 const {
-  frontmatter: { title, widget },
+  frontmatter: { title, widget, bgImage },
 } = Astro.props;
 ---
 
@@ -28,12 +32,19 @@ const {
       src="https://widget-prod.bfv.de/widget/widgetresource/widgetjs"
     ></script>
   </head>
-  <body class="drawer-content flex h-screen flex-col">
+  <body
+    class="drawer-content flex flex-col bg-blue bg-opacity-50"
+    style={{
+      backgroundImage: `url(${bgImage})`,
+      backgroundSize: !!bgImage && "cover",
+      backgroundAttachment: !!bgImage && "fixed",
+    }}
+  >
     <input id="drawer" type="checkbox" class="drawer-toggle" />
     <Header />
-    <main class="flex-1 p-2">
+    <main class="flex-1 p-2 text-neutral">
       <div
-        class="prose mx-auto dark:prose-invert sm:prose-sm lg:prose-xl prose-headings:text-center prose-img:m-auto prose-img:rounded-2xl"
+        class="prose prose-stone mx-auto mb-8 bg-neutral-focus bg-opacity-90 p-4 bg-blend-soft-light shadow-2xl shadow-neutral-focus dark:prose-invert sm:prose-sm lg:prose-xl prose-headings:text-center prose-h1:text-5xl prose-img:m-auto prose-img:rounded-2xl"
       >
         <h1>{title}</h1>
         {widget && <Widget {widget} />}
@@ -43,4 +54,10 @@ const {
     <Footer />
     <Drawer />
   </body>
+  <style>
+    .background {
+      background-size: cover;
+      background-attachment: fixed;
+    }
+  </style>
 </html>

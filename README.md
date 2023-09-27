@@ -7,4 +7,9 @@
 
 ## TODO
 
-- https://www.bfv.de/allgemein/datenschutzrichtlinien für die Widgets
+- sortierung mannschaften
+- sponsoren (logos von Jann, design, links)
+- schön machen
+- Mitglied werden (blau)
+- Mannschaftsbilder
+- Satzung
