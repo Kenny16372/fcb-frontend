@@ -6,7 +6,7 @@ title: "Frauen Fitness"
 **Die Gruppe besteht aus derzeit 10-15 Frauen.**
 **Wir trainieren jeden Mittwoch 19 Uhr in der Grundschulturnhalle**
 
-    Bleib fit, mach mit!
+> Bleib fit, mach mit!
 
 Lust auf:
 

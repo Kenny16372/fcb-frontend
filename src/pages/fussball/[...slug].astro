@@ -19,7 +19,13 @@ const { entry } = Astro.props;
 const { Content } = await entry.render();
 ---
 
-<Layout frontmatter={{ title: entry.data.title, widget: entry.data.widget }}>
+<Layout
+  frontmatter={{
+    title: entry.data.title,
+    widget: entry.data.widget,
+    bgImage: "/funino.jpg",
+  }}
+>
   {
     entry.data.coach && (
       <div>

@@ -3,21 +3,23 @@ import { getCollection } from "astro:content";
 import NavigationItem from "./NavigationItem.astro";
 import NavigationGroupItem from "./NavigationGroupItem.astro";
 const teams = await getCollection("teams");
+
+const teamNavItems = teams
+  .map((team) => ({
+    path: team.slug,
+    title: team.data.title,
+    order: team.data.order,
+  }))
+  .sort((a, b) => (a.order ?? Infinity) - (b.order ?? Infinity));
 ---
 
-<a href="/Eintrittserklärung.pdf" target="_blank">Mitglied werden</a>
+<a
+  href="/Eintrittserklärung.pdf"
+  class="btn me-4 bg-blue text-neutral-50"
+  target="_blank">Mitglied werden</a
+>
 <NavigationItem path="/gremium" title="Gremium" />
-<NavigationGroupItem
-  prefix="/fussball"
-  title="Fußball"
-  items={[
-    ...teams.map((team) => ({
-      path: team.slug,
-      title: team.data.title,
-      order: team.data.order,
-    })),
-  ].sort(({ order }) => order ?? Infinity)}
-/>
+<NavigationGroupItem prefix="/fussball" title="Fußball" items={teamNavItems} />
 <NavigationItem path="/handball" title="Handball" />
 <NavigationItem path="/volleyball" title="Volleyball" />
 <NavigationItem path="/kinderturnen" title="Kinderturnen" />

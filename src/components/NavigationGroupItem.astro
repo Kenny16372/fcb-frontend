@@ -1,5 +1,4 @@
 ---
-import { isRenderTemplateResult } from "astro/dist/runtime/server/render/astro";
 import type { Props as NavigationItemProps } from "./NavigationItem.astro";
 import NavigationItem from "./NavigationItem.astro";
 
@@ -14,7 +13,7 @@ const { prefix, title, items } = Astro.props as Props;
 <li>
   <details>
     <summary>{title}</summary>
-    <ul class="p-2 bg-base-100">
+    <ul class="bg-base-100 p-2 text-lg text-neutral-content">
       {
         items.map((item) => (
           <NavigationItem {...item} path={`${prefix}/${item.path}`} />
