@@ -7,7 +7,7 @@ import type { WidgetType } from "src/components/Widget.astro";
 import Widget from "src/components/Widget.astro";
 
 export interface Props {
-  frontmatter: { title: string; widget: WidgetType };
+  frontmatter: { title: string; widget: WidgetType | undefined };
 }
 
 const {
