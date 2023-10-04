@@ -1,0 +1,17 @@
+---
+import { Image } from "astro:assets";
+import { getCollection } from "astro:content";
+
+const sponsors = await getCollection("sponsors");
+---
+
+<div>
+  {
+    sponsors.map(({ data: { homepage, logo, text } }) => (
+      <a href={homepage}>
+        {logo && <Image src={logo} alt={text} />}
+        <span>{text}</span>
+      </a>
+    ))
+  }
+</div>

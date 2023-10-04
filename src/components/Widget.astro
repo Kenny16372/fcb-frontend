@@ -1,12 +1,8 @@
 ---
-export enum WidgetType {
-  Games = "games",
-  First = "first",
-  Second = "second"
-}
+import WidgetType from './WidgetType'
 
 export type Props = {
-  widget: WidgetType;
+  widget: keyof typeof WidgetType;
 };
 
 const { widget } = Astro.props as Props;
