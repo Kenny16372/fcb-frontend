@@ -13,7 +13,7 @@ const { prefix, title, items } = Astro.props as Props;
 <li>
   <details>
     <summary>{title}</summary>
-    <ul class="bg-base-100 p-2 text-lg text-neutral-content">
+    <ul class="z-10 p-2 text-lg">
       {
         items.map((item) => (
           <NavigationItem {...item} path={`${prefix}/${item.path}`} />
