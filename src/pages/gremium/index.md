@@ -11,3 +11,4 @@ Mitglieder des Gremiums:
 - Markus Schülein (Fußballabteilungsleitung)
 - Jann Brauner (Schriftführer)
 - Sven Gerhardt (Schatzmeister)
+- Jürgen Kröner (Platzwart)
