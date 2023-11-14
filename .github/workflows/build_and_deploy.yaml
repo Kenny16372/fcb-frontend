@@ -19,6 +19,7 @@ jobs:
         run: yarn build
 
       - name: Sync files
+        if: github.ref_name == 'main'
         uses: wlixcc/SFTP-Deploy-Action@v1.2.4
         with:
           username: "${{ secrets.USERNAME }}"
