@@ -2,7 +2,7 @@ name: Deploy to VPS
 
 on:
   push:
-    branches: [main]
+    branches: ["**"]
 
 jobs:
   web-deploy:
@@ -18,7 +18,8 @@ jobs:
       - name: Build project
         run: yarn build
 
-      - name: Sync files
+      - name: Sync files (dry-run)
+        if: github.ref_name != 'main'
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
           server: ${{ secrets.server }}
@@ -26,3 +27,15 @@ jobs:
           password: ${{ secrets.password }}
           local-dir: dist/
           server-dir: public_html/
+          dry-run: true
+
+      - name: Sync files
+        if: github.ref_name == 'main'
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          server: ${{ secrets.server }}
+          username: ${{ secrets.username }}
+          password: ${{ secrets.password }}
+          local-dir: dist/
+          server-dir: public_html/
+          dry-run: false
