@@ -4,20 +4,13 @@ on:
   push:
     branches: [main]
 
-env:
-  REMOTE_HOST: ${{ secrets.VPS_HOST }}
-  REMOTE_USER: ${{ secrets.VPS_USERNAME }}
-  SSH_PRIVATE_KEY: ${{ secrets.VPS_KEY }}
-  SOURCE: dist/
-  TARGET: /var/www/html/
-
 jobs:
-  deploy:
-    runs-on: ubuntu-22.04
-
+  web-deploy:
+    name: Build and deploy
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Install packages
         run: yarn
@@ -25,5 +18,11 @@ jobs:
       - name: Build project
         run: yarn build
 
-      - name: ssh deploy
-        uses: easingthemes/ssh-deploy@v4.1.8
+      - name: Sync files
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          server: ${{ secrets.server }}
+          username: ${{ secrets.username }}
+          password: ${{ secrets.password }}
+          local-dir: dist/
+          server-dir: public_html/
