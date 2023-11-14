@@ -1,23 +1,16 @@
-name: Deploy to VPS
+name: Deploy to Hetzner
 
 on:
   push:
-    branches: [main]
-
-env:
-  REMOTE_HOST: ${{ secrets.VPS_HOST }}
-  REMOTE_USER: ${{ secrets.VPS_USERNAME }}
-  SSH_PRIVATE_KEY: ${{ secrets.VPS_KEY }}
-  SOURCE: dist/
-  TARGET: /var/www/html/
+    branches: ["**"]
 
 jobs:
-  deploy:
-    runs-on: ubuntu-22.04
-
+  web-deploy:
+    name: Build and deploy
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Install packages
         run: yarn
@@ -25,5 +18,13 @@ jobs:
       - name: Build project
         run: yarn build
 
-      - name: ssh deploy
-        uses: easingthemes/ssh-deploy@v4.1.8
+      - name: Sync files
+        if: github.ref_name == 'main'
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
+        with:
+          username: "${{ secrets.USERNAME }}"
+          server: "${{ secrets.SERVER }}"
+          ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
+          local_path: "./dist/*"
+          remote_path: "public_html/"
+          sftp_only: true
