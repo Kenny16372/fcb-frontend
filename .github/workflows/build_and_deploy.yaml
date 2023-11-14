@@ -1,4 +1,4 @@
-name: Deploy to VPS
+name: Deploy to Hetzner
 
 on:
   push:
@@ -18,24 +18,11 @@ jobs:
       - name: Build project
         run: yarn build
 
-      - name: Sync files (dry-run)
-        if: github.ref_name != 'main'
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
-        with:
-          server: ${{ secrets.server }}
-          username: ${{ secrets.username }}
-          password: ${{ secrets.password }}
-          local-dir: dist/
-          server-dir: public_html/
-          dry-run: true
-
       - name: Sync files
-        if: github.ref_name == 'main'
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
         with:
-          server: ${{ secrets.server }}
-          username: ${{ secrets.username }}
-          password: ${{ secrets.password }}
-          local-dir: dist/
-          server-dir: public_html/
-          dry-run: false
+          username: "${{ secrets.USERNAME }}"
+          server: "${{ secrets.SERVER }}"
+          ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
+          local_path: "./dist/*"
+          remote_path: "public_html/"
