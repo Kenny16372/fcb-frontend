@@ -1,5 +1,5 @@
 import { z, defineCollection } from "astro:content";
-import { WidgetType } from "src/components/Widget.astro";
+import WidgetType from "src/components/WidgetType";
 
 const teamCollection = defineCollection({
   schema: ({ image }) =>
@@ -14,6 +14,17 @@ const teamCollection = defineCollection({
     }),
 });
 
+const sponsorCollection = defineCollection({
+  type: "data",
+  schema: ({ image }) =>
+    z.object({
+      homepage: z.string(),
+      logo: image().optional(),
+      text: z.string(),
+    }),
+});
+
 export const collections = {
   teams: teamCollection,
+  sponsors: sponsorCollection,
 };
