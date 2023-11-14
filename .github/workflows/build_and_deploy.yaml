@@ -26,3 +26,4 @@ jobs:
           ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
           local_path: "./dist/*"
           remote_path: "public_html/"
+          sftp_only: true
