@@ -7,9 +7,14 @@ import Navigation from "./Navigation.astro";
   <nav class="navbar">
     <div class="flex-1"><Logo /></div>
     <div class="flex-none">
+      <a
+        href="/Eintrittserklärung.pdf"
+        class="btn me-4 bg-blue text-lg text-slate-50"
+        target="_blank">Mitglied werden</a
+      >
       <div class="hidden lg:block">
         <ul
-          class="menu menu-horizontal px-1 text-xl font-extrabold text-neutral-700 dark:text-neutral-50"
+          class="menu menu-horizontal px-1 text-xl font-extrabold text-slate-700 dark:text-slate-50"
         >
           <Navigation />
         </ul>
@@ -32,3 +37,11 @@ import Navigation from "./Navigation.astro";
     </div>
   </nav>
 </header>
+<style is:global>
+  @media (prefers-color-scheme: dark) {
+    nav li > a,
+    nav summary {
+      text-shadow: #000 0 0 5px;
+    }
+  }
+</style>

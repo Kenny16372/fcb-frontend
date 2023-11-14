@@ -7,9 +7,7 @@
 
 ## TODO
 
-- sortierung mannschaften
 - sponsoren (logos von Jann, design, links)
 - schön machen
-- Mitglied werden (blau)
 - Mannschaftsbilder
 - Satzung
