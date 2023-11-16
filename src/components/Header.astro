@@ -25,23 +25,34 @@ import Navigation from "./Navigation.astro";
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
-            class="inline-block h-6 w-6 stroke-current"
-            ><path
+            class="inline-block h-6 w-6 stroke-current text-blue"
+          >
+            <filter id="white-background">
+              <feDropShadow
+                dx="0"
+                dy="1"
+                stdDeviation="0"
+                flood-color="white"
+                flood-opacity="0.5"></feDropShadow>
+            </filter>
+            <path
               stroke-linecap="round"
               stroke-linejoin="round"
               stroke-width="2"
-              d="M4 6h16M4 12h16M4 18h16"></path></svg
-          >
+              style="filter:url(#white-background)"
+              d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
         </label>
       </div>
     </div>
   </nav>
-</header>
-<style is:global>
-  @media (prefers-color-scheme: dark) {
-    nav li > a,
-    nav summary {
-      text-shadow: #000 0 0 5px;
+
+  <style is:global>
+    @media (prefers-color-scheme: dark) {
+      nav li > a,
+      nav summary {
+        text-shadow: #000 0 0 5px;
+      }
     }
-  }
-</style>
+  </style>
+</header>
