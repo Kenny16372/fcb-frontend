@@ -1,11 +1,13 @@
 ---
 export type Props = {
-  path: string;
   title: string;
+  year?: string;
+  path: string;
+  pathTarget?: string;
 };
-const { path, title } = Astro.props as Props;
+const { path, pathTarget, title, year } = Astro.props as Props;
 ---
 
 <li>
-  <a href={path}>{title}</a>
+  <a href={path} target={pathTarget}>{title}{year && <>&nbsp;({year})</>}</a>
 </li>
