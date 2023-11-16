@@ -10,6 +10,8 @@ von 17.00 – 18.00 Uhr
 
 Gemeinsam, oder auch nach Alter getrennt, haben alle Spaß beim "KiTu"!
 
+![Turnübungen](../../assets/kinderturnen.jpg)
+
 Wir betreiben kein Leistungsturnen! Die Kinder sollen mit Spaß und Freude an
 der Bewegung soziale Erfahrungen sammeln. Nach den Grundsätzen der
 Psychomotorik wird häufig nur das Bewegungsziel vorgegeben, den Weg
