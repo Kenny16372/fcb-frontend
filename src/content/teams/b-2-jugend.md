@@ -1,4 +1,5 @@
 ---
-title: "B2 Jugend 2008"
+title: "B2-Jugend"
+year: "2008"
 coach: ""
 ---

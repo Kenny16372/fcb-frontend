@@ -5,6 +5,7 @@ const teamCollection = defineCollection({
   schema: ({ image }) =>
     z.object({
       title: z.string(),
+      year: z.string().optional(),
       coach: z.string(),
       photo: image().optional(),
       order: z.number().optional(),
