@@ -8,6 +8,7 @@ const teamNavItems = teams
   .map((team) => ({
     path: team.slug,
     title: team.data.title,
+    year: team.data.yearNavigation,
     order: team.data.order,
   }))
   .sort((a, b) => (a.order ?? Infinity) - (b.order ?? Infinity));
