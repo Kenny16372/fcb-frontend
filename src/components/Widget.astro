@@ -2,7 +2,7 @@
 import WidgetType from './WidgetType'
 
 export type Props = {
-  widget: keyof typeof WidgetType;
+  widget: WidgetType;
 };
 
 const { widget } = Astro.props as Props;

@@ -1,7 +1,7 @@
-const WidgetType = {
-  Games: "games",
-  First: "first",
-  Second: "second"
+enum WidgetType {
+  Games = "games",
+  First = "first",
+  Second = "second",
 }
 
-export default WidgetType
+export default WidgetType;

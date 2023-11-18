@@ -7,7 +7,11 @@ const teamCollection = defineCollection({
       title: z.string(),
       year: z.string().optional(),
       yearNavigation: z.string().optional(),
-      coach: z.string(),
+      coaches: z
+        .array(
+          z.object({ name: z.string(), email: z.string().email().optional() }),
+        )
+        .optional(),
       photo: image().optional(),
       order: z.number().optional(),
       times: z.string().optional(),
