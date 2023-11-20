@@ -28,10 +28,19 @@ const { Content } = await entry.render();
   }}
 >
   {
-    entry.data.coach && (
+    entry.data.coaches && (
       <div>
         <label>Trainer:&nbsp;</label>
-        <span>{entry.data.coach}</span>
+        {entry.data.coaches.map((coach, idx) => {
+          const name = coach.name.replace(" ", "\u00a0");
+          return (
+            <>
+              {idx !== 0 && " "}
+              {!coach.email && <span>{name}</span>}
+              {coach.email && <a href={`mailto:${coach.email}`}>{name}</a>}
+            </>
+          );
+        })}
       </div>
     )
   }
