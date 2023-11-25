@@ -9,5 +9,7 @@ const { path, pathTarget, title, year } = Astro.props as Props;
 ---
 
 <li>
-  <a href={path} target={pathTarget}>{title}{year && <>&nbsp;({year})</>}</a>
+  <a class="w-max" href={path} target={pathTarget}>
+    {title}{year && <>&nbsp;({year})</>}
+  </a>
 </li>

@@ -12,7 +12,7 @@ const { prefix, title, items } = Astro.props as Props;
 
 <li>
   <details>
-    <summary>{title}</summary>
+    <summary class="w-max">{title}</summary>
     <ul class="z-10 p-2 text-lg">
       {
         items.map((item) => (
