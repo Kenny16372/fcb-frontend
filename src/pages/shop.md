@@ -1,4 +1,8 @@
 ---
 layout: "@layouts/Layout.astro"
-title: "Kommt bald... 😉"
+title: "Online Shop"
 ---
+
+Sie sollten automatisch zu unserem offiziellen Online Shop weitergeleitet werden.
+
+Sollte das nicht geschehen, klicken Sie bitte [hier](https://fcbischberg.fan12.de/).

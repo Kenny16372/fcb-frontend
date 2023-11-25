@@ -6,4 +6,7 @@ import tailwind from "@astrojs/tailwind";
 // https://astro.build/config
 export default defineConfig({
   integrations: [mdx(), tailwind()],
+  redirects: {
+    "/shop": { destination: "https://fcbischberg.fan12.de/", status: 303 },
+  },
 });
