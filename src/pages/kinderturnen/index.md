@@ -3,6 +3,8 @@ layout: "@layouts/Layout.astro"
 title: "Kinderturnen"
 ---
 
+<div style="color: red">Aktuell sind alle Stunden belegt und auch die Warteliste ist voll</div>
+
 > Erlaubt ist was gefällt und die Kinder bewegt.
 
 Bewegung ist wichtig... auch schon für die Kleinsten...auch einfach mal laut sein dürfen, gehört bei uns dazu.

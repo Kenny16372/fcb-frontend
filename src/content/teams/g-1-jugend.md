@@ -12,3 +12,5 @@ coaches:
 times: "Mi 17:00 - 18:00 Uhr"
 place: "Sportplatz am Leinritt"
 ---
+
+![Die Mannschaft beim Hallenturnier](../../assets/g1.jpg)
