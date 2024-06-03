@@ -10,6 +10,6 @@ coaches:
   - name: Przemyslaw Nida
     email: przemek.n@poczta.onet.pl
 times: "Do 17:00 - 18:15 Uhr"
-photo: "../../assets/f2.jpg"
+photo: "../../assets/u8_u9.jpg"
 place: "Sportplatz am Leinritt"
 ---
