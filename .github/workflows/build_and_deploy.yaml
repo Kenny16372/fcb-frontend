@@ -6,6 +6,7 @@ on:
 
 jobs:
   web-deploy:
+    if: false
     name: Build and deploy
     runs-on: ubuntu-latest
     steps:
