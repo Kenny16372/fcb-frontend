@@ -1,13 +1,12 @@
 ---
 title: "F1-Jugend"
-year: "2015"
+year: "2015/2016"
 yearNavigation: "U9"
 coaches:
-  - name: Igor Lovrinovic
-    email: lovrinovic.igor@gmail.com
-  - name: Leni Schömburg-Heuck
-    email: ingalena.schoemburg@gmail.com
-times: "Do 17:00 - 18:15 Uhr"
+  - name: Matthias Trempa
+    email: m.trempa@gmx.de
+  - name: Heiko Reinecke
+times: ""
 photo: "../../assets/u8_u9.jpg"
 place: "Sportplatz am Leinritt"
 ---

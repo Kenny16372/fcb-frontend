@@ -1,14 +1,14 @@
 ---
-title: "C2-Jugend"
-year: "2010"
-yearNavigation: "U14"
+title: "C1-Jugend"
+year: "2011"
+yearNavigation: "U15"
 coaches:
-  - name: Michael Göller
-  - name: Christian Kohmann
-    email: christian.kohmann1@web.de
-  - name: Andreas Lamprecht
-    email: a.73@gmx.de
-times: "Mo und Do 17:00 - 18:30"
-photo: "../../assets/c2.jpg"
-place: "Mo Sportplatz Wacker Bamberg, Do Sportplatz Weipeldorfer Straße"
+  - name: Kilian Bender
+    email: kili.bender@t-online.de
+  - name: Janine Wilda
+    email: janine_wilda@gmx.de
+  - name: Jürgen Müller
+    email: mueller.bob@web.de
+times: "Di 17:30 - 19:00 Uhr, Do 17:00 - 18:30 Uhr"
+place: "Di Sportplatz Wacker Bamberg, Do Sportplatz Weipeldorfer Straße"
 ---
