@@ -3,7 +3,7 @@ import "../global.css";
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 import Drawer from "../components/Drawer.astro";
-import WidgetType from "src/components/WidgetType.ts";
+import WidgetType from "src/components/WidgetType";
 import Widget from "src/components/Widget.astro";
 
 export interface Props {
@@ -30,6 +30,7 @@ const {
     <title>{title}</title>
     <script
       type="text/javascript"
+      is:inline
       src="https://widget-prod.bfv.de/widget/widgetresource/widgetjs"></script>
   </head>
   <body

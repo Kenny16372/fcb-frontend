@@ -3,7 +3,8 @@ layout: "@layouts/Layout.astro"
 title: "Kinderturnen"
 ---
 
-<div style="color: red">Aktuell sind alle Stunden belegt und auch die Warteliste ist voll</div>
+<blockquote class="text-warning-content bg-warning/70">Kinderturnen befindet sich in der Sommerpause und ist ab dem 15.9.2025 wieder zu erreichen</blockquote>
+<blockquote class="text-error-content bg-error/50">Aktuell sind alle Stunden belegt und auch die Warteliste ist voll</blockquote>
 
 > Erlaubt ist was gefällt und die Kinder bewegt.
 
