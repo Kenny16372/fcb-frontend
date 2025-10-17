@@ -11,6 +11,7 @@ const teamNavItems = teams
     year: team.data.yearNavigation,
     order: team.data.order,
   }))
+  .sort((a,b) => (a.title > b.title ? 1 : -1))
   .sort((a, b) => (a.order ?? Infinity) - (b.order ?? Infinity));
 ---
 
