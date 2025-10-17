@@ -4,6 +4,7 @@ year: "2019"
 yearNavigation: "U7"
 coaches:
   - name: Marcel Wächter
+    email: hauptfeld79@web.de
   - name: Sascha Zink
   - name: Jannes Günther   
 times: "Mi 17:30-18:30"
