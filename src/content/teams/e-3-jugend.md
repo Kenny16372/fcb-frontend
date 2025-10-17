@@ -1,5 +1,5 @@
 ---
-title: "E2-Jugend"
+title: "E3-Jugend"
 year: "2016"
 yearNavigation: "U10"
 coaches:
