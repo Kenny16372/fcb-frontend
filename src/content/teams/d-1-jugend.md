@@ -7,6 +7,6 @@ coaches:
     email: ehrhardt.jens@gmx.de
   - name: Zoran Maksic
     email: zoran-maksic@gmx.de
-times: "Mi 17:30 - 19:00 Uhr, Fr 16:30 - 18:00 Uhr"
-place: "Mi Sportplatz Weipeldorfer Straße, Fr Kunstrasenplatz Gaustadt"
+times: "Di 16:30-18:00"
+place: "Di Sportplatz Weipelsdorfer Straße"
 ---

@@ -9,6 +9,6 @@ coaches:
     email: janine_wilda@gmx.de
   - name: Jürgen Müller
     email: mueller.bob@web.de
-times: "Di 17:30 - 19:00 Uhr, Do 17:00 - 18:30 Uhr"
-place: "Di Sportplatz Wacker Bamberg, Do Sportplatz Weipeldorfer Straße"
+times: "Di 17:00-18:30, Do 17:30-19:00"
+place: "Di Gaustadt (KuRa), Do Gaustadt (KuRa)"
 ---

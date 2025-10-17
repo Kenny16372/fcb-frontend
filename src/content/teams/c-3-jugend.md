@@ -7,7 +7,7 @@ coaches:
     email: kunze91@gmail.com
   - name: Christian Kohmann
     email: christian.kohmann1@web.de
-times: "Mo und Do 17:00 - 18:30"
+times: "Di 17:30-19:00, Do 18:00-19:00"
 photo: "../../assets/c2.jpg"
-place: "Mo Sportplatz Wacker Bamberg, Do Sportplatz Weipeldorfer Straße"
+place: "Di Sportplatz Weipelsdorfer Straße, Do Sportplatz Weipelsdorfer Straße"
 ---

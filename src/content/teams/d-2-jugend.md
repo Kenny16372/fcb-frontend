@@ -7,7 +7,7 @@ coaches:
     email: ra.jannbrauner@gmail.com
   - name: Michael Hesselbarth
     email: michael.hesselbarth@mh-etec.de
-times: "Di 17:30 - 19:00 Uhr"
+times: "Di 16:45-18:15, Fr 16:45-18:15"
 photo: "../../assets/d2_d3.jpg"
-place: "Sportplatz Weipeldorfer Straße"
+place: "Di Sportplatz am Leinritt, Fr Sportplatz Weipelsdorfer Straße"
 ---

@@ -7,7 +7,7 @@ coaches:
     email: thimo.hohner@freenet.de
   - name: Philipp Häder
     email: philipp.haeder@web.de
-times: "Mo und Mi 18:00 - 19:30 Uhr"
+times: "Mo 18:00-19:30, Mi 18:00-19:30"
 photo: "../../assets/b1.jpg"
-place: "Mo Kunstrasenplatz Gaustadt, Mi Sportplatz Weipelsdorfer Straße"
+place: "Mo Gaustadt (KuRa), Mi Sportplatz Weipelsdorfer Straße"
 ---

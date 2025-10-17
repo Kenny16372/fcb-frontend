@@ -8,6 +8,6 @@ coaches:
   - name: Stefan Graf
     email: grafstefan@gmx.de
   - name: Sebastian Walz
-times: ""
-place: ""
+times: "Do 17:00-18:30 (Sep, Okt, Mär - ab Apr 26 Wechsel mit E2/E3)"
+place: "Do Sportplatz am Leinritt"
 ---

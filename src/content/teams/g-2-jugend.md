@@ -4,7 +4,7 @@ year: "2019"
 yearNavigation: "U7"
 coaches:
   - name: Marcel Wächter
-times: "Mi 17:00 - 18:00 Uhr"
-place: "Sportplatz am Leinritt"
+times: "Mi 17:00-18:00"
+place: "Mi Sportplatz am Leinritt"
 photo: "../../assets/g2.jpg"
 ---
