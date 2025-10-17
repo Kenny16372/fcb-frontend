@@ -1,10 +1,11 @@
 ---
 title: "G2-Jugend"
-year: "2019"
+year: "2020 oder jünger"
 yearNavigation: "U7"
 coaches:
-  - name: Marcel Wächter
-times: "Mi 17:00-18:00"
+  - name: Markus Schülein
+    email: markus.schuelein@fcbischberg.de
+  - name: Erkan Yildirim
+times: "Mi 17:15-18:15"
 place: "Mi Sportplatz am Leinritt"
-photo: "../../assets/g2.jpg"
 ---

@@ -1,5 +1,5 @@
 ---
-title: "D2-Jugend"
+title: "D3-Jugend"
 year: "2014"
 yearNavigation: "U12"
 coaches:

@@ -1,14 +1,11 @@
 ---
-title: "C1-Jugend"
-year: "2011"
-yearNavigation: "U15"
+title: "C2-Jugend"
+year: "2012"
+yearNavigation: "U14"
 coaches:
-  - name: Kilian Bender
-    email: kili.bender@t-online.de
-  - name: Janine Wilda
-    email: janine_wilda@gmx.de
-  - name: Jürgen Müller
-    email: mueller.bob@web.de
-times: "Di 17:00-18:30, Do 17:30-19:00"
-place: "Di Gaustadt (KuRa), Do Gaustadt (KuRa)"
+  - name: Zoran Maksic
+    email: zoran-maksic@gmx.de
+times: "Di 17:30-19:00, Do 18:00-19:00"
+photo: "../../assets/c2.jpg"
+place: "Di Sportplatz Weipelsdorfer Straße, Do Sportplatz Weipelsdorfer Straße"
 ---

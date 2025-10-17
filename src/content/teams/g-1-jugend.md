@@ -1,13 +1,13 @@
 ---
 title: "G1-Jugend"
-year: "2018"
+year: "2019"
 yearNavigation: "U7"
 coaches:
-  - name: Mulualem (Mo) Gulema
-  - name: Patrick Schramm
-  - name: Erkan Yildirim
-times: "Mi 17:30-18:30, Fr 15:00-16:30 (vrstl. nur alle 2 Wochen)"
-place: "Mi Sportplatz am Leinritt, Fr Sportplatz am Leinritt"
+  - name: Marcel Wächter
+  - name: Sascha Zink
+  - name: Jannes Günther   
+times: "Mi 17:30-18:30"
+place: "Mi Sportplatz am Leinritt"
 ---
 
 ![Die Mannschaft beim Hallenturnier](../../assets/g1.jpg)
