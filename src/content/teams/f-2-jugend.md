@@ -5,6 +5,5 @@ yearNavigation: "U9"
 coaches:
   - name: Mulualem Gulema
 times: "Do 17:00-18:30"
-photo: "../../assets/u8_u9.jpg"
 place: "Do Sportplatz am Leinritt"
 ---

@@ -9,4 +9,5 @@ coaches:
     email: thorsten0901@web.de
 times: "Di 16:30-18:00"
 place: "Di Sportplatz Weipelsdorfer Straße"
+photo: "../../assets/d1.jpg"
 ---
