@@ -6,7 +6,7 @@ const teams = await getCollection("teams");
 
 const teamNavItems = teams
   .map((team) => ({
-    path: team.slug,
+    path: String(team.data.title).toLowerCase().replaceAll(/\W+/g, "-"),
     title: team.data.title,
     year: team.data.yearNavigation,
     order: team.data.order,

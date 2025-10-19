@@ -6,7 +6,7 @@ import Layout from "../../layouts/Layout.astro";
 export async function getStaticPaths() {
   const teams = await getCollection("teams");
   return teams.map((entry) => ({
-    params: { slug: entry.slug },
+    params: { slug:  String(entry.data.title).toLowerCase().replaceAll(/\W+/g, "-") },
     props: { entry },
   }));
 }
