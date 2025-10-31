@@ -33,5 +33,4 @@ jobs:
           # host_public_key: ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGMRfqED3tgysjyP8qvenXLzLcsEpYhrQZTlo1UEFYuM
           remote: public_html/homepage/
           local: dist/
-          mirror_options: "--verbose"
-          ssh_options: "-v"
+          mirror_options: "--parallel=16"
