@@ -73,3 +73,4 @@ jobs:
           remote: "public_html/homepage/"
           local: "dist/"
           mirror_options: "--verbose"
+          ssh_options: "-v"
