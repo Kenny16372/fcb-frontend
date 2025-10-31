@@ -8,6 +8,8 @@ title: "Frauen Fitness"
 
 > Bleib fit, mach mit!
 
+![Die Gruppe](../../assets/frauenfitness.jpg)
+
 Lust auf:
 
 Fitness- und Problemzonengymnastik mit guter Musik, gute Laune, Spaß und a weng
