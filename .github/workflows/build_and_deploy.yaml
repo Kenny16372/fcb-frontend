@@ -27,7 +27,7 @@ jobs:
         uses: swillner/sftp-sync-action@v1.0
         with:
           server: "${{ secrets.SERVER }}"
-          user: "${{ secrets.USER }}"
+          user: "${{ secrets.USERNAME }}"
           user_private_key: "${{ secrets.SSH_PRIVATE_KEY }}"
           host_public_key: |-
             -----BEGIN CERTIFICATE-----
