@@ -30,7 +30,7 @@ jobs:
           user: ${{ secrets.USERNAME }}
           user_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
           # host_public_key: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDF6UXg502phH7eSBgzj07yVJXijMMOqdyIhqXA0HoFJ6YC8HJOKFLVcyv9gDCAPghMYHDZRz8sxjsNDcD474azEE55R3GK96jS1W/zRLSZKckmNYzvGJySY8uhCUxU1qbNF56yPcl4sBcPXDi0oocnO8pH67v88PAenTMqZ14hZZ4hwDiobZvifTQV98J2x1eyQTQyxE1Dei3iW9Mjn/UDlURBrdbkimE84a0VZJIEF7FoE1yjBLrXlY4sXeKVvbmAkzKvLjKU70XgRfKZySG65ICFqJMrnmnMRAylUw74mQ/der5utxoD0+gzoLCWvf16hGmKFwf6Djaz3fBqZDid
-          host_public_key: ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGMRfqED3tgysjyP8qvenXLzLcsEpYhrQZTlo1UEFYuM
+          # host_public_key: ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGMRfqED3tgysjyP8qvenXLzLcsEpYhrQZTlo1UEFYuM
           remote: public_html/homepage/
           local: dist/
           mirror_options: "--verbose"
