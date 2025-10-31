@@ -72,3 +72,4 @@ jobs:
             -----END CERTIFICATE-----
           remote: "public_html/homepage/"
           local: "dist/"
+          mirror_options: "--verbose"
