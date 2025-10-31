@@ -68,4 +68,4 @@ jobs:
             -----END CERTIFICATE-----
           remote: "public_html/homepage/"
           local: "dist/"
-          mirror_options: "--exclude-glob=.git*/ --dry-run"
+          mirror_options: "--exclude-glob=.git*/ --dry-run --delete"
