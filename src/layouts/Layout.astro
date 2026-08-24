@@ -1,13 +1,10 @@
 ---
 import "../global.css";
-import { Image } from "astro:assets";
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 import Drawer from "../components/Drawer.astro";
 import WidgetType from "src/components/WidgetType";
 import Widget from "src/components/Widget.astro";
-import festfolge from "../assets/festfolge.png";
-import festfolgeHochkant from "../assets/festfolge_hochkant.jpeg";
 
 export interface Props {
   frontmatter: {
@@ -52,20 +49,6 @@ const {
       >
         <h1 class:list={[year && "mb-2"]}>{title}</h1>
         {year && <div class="mb-8 text-center text-4xl">Jg.&nbsp;{year}</div>}
-        {widget === WidgetType.Games && (
-          <>
-            <Image
-              src={festfolgeHochkant}
-              alt="Festfolge"
-              class="not-prose mb-8 w-full sm:hidden"
-            />
-            <Image
-              src={festfolge}
-              alt="Festfolge"
-              class="not-prose mb-8 hidden w-full sm:block"
-            />
-          </>
-        )}
         {widget && <Widget {widget} />}
         <slot />
       </div>
