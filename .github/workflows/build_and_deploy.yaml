@@ -22,15 +22,26 @@ jobs:
       - name: Build project
         run: yarn build
 
-      - name: Sync files
+      - name: Deploy
         if: github.ref_name == 'main'
-        uses: swillner/sftp-sync-action@v1.0
-        with:
-          server: ${{ secrets.SERVER }}
-          user: ${{ secrets.USERNAME }}
-          user_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
-          # host_public_key: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDF6UXg502phH7eSBgzj07yVJXijMMOqdyIhqXA0HoFJ6YC8HJOKFLVcyv9gDCAPghMYHDZRz8sxjsNDcD474azEE55R3GK96jS1W/zRLSZKckmNYzvGJySY8uhCUxU1qbNF56yPcl4sBcPXDi0oocnO8pH67v88PAenTMqZ14hZZ4hwDiobZvifTQV98J2x1eyQTQyxE1Dei3iW9Mjn/UDlURBrdbkimE84a0VZJIEF7FoE1yjBLrXlY4sXeKVvbmAkzKvLjKU70XgRfKZySG65ICFqJMrnmnMRAylUw74mQ/der5utxoD0+gzoLCWvf16hGmKFwf6Djaz3fBqZDid
-          # host_public_key: ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGMRfqED3tgysjyP8qvenXLzLcsEpYhrQZTlo1UEFYuM
-          remote: public_html/homepage/
-          local: dist/
-          mirror_options: "--parallel=16"
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          SERVER: ${{ secrets.SERVER }}
+          USERNAME: ${{ secrets.USERNAME }}
+        run: |
+          mkdir -p ~/.ssh
+          printf '%s\n' "$SSH_PRIVATE_KEY" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+
+          sudo apt-get update -qq && sudo apt-get install -y -qq lftp
+
+          # Server is SFTP-only (no shell), so rsync is out; lftp mirrors over
+          # the SFTP subsystem. The ":@" gives an empty password so lftp relies
+          # solely on the SSH key in connect-program.
+          lftp -c "
+            set sftp:connect-program \"ssh -a -x -i $HOME/.ssh/deploy_key -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null\";
+            set net:max-retries 2;
+            set net:persist-retries 0;
+            open sftp://$USERNAME:@$SERVER;
+            mirror --reverse --delete --parallel=16 --verbose dist/ public_html/homepage/;
+          "
