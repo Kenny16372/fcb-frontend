@@ -1,2 +1,0 @@
-SFTP sync test file — created 2026-08-28
-If you can read this at https://fcbischberg.de/test-sftp-sync.txt the deploy works.
